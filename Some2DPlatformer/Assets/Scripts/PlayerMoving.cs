@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Threading;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMoving : MonoBehaviour
@@ -22,7 +23,7 @@ public class PlayerMoving : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             player.transform.position += new Vector3(-speed, 0, 0);
-            player.transform.rotation = Quaternion.Euler(0, 550, 0); 
+            player.transform.rotation = Quaternion.Euler(0, 550, 0);
         }
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
@@ -45,9 +46,15 @@ public class PlayerMoving : MonoBehaviour
             isGrounded = true;
     }
 
-    private void OnCollisionExit2D(Collision2D collision)//חולכÿ הכÿ ןנûזךאû
+    private void OnCollisionExit2D(Collision2D collision)//חולכÿ הכÿ ןנûזךא
     {
         if (collision.gameObject.tag == "Ground")
             isGrounded = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Restarter")
+            SceneManager.LoadScene(0);
     }
 }
