@@ -55,22 +55,25 @@ public class Patroller : MonoBehaviour
 
     void Chill()
     {
-        if (transform.position.x > point.position.x + distanceOfPatrol)
-        {
-            movingRight = false;
-        }
-        else if (transform.position.x < point.position.x - distanceOfPatrol)
+        if (transform.position.x < point.position.x - distanceOfPatrol)
         {
             movingRight = true;
+        }
+        else if (transform.position.x > point.position.x + distanceOfPatrol)
+        {
+            movingRight = false;
         }
 
         if (movingRight)
         {
             transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+
         }
         else
         {
             transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
+            transform.rotation = Quaternion.Euler(0, 550, 0);
         }
         
     }
@@ -78,10 +81,26 @@ public class Patroller : MonoBehaviour
     void Angry()
     {
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        if (transform.position.x < player.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 550, 0);
+        }
     }
 
     void GoBack()
     {
         transform.position = Vector2.MoveTowards(transform.position, point.position, speed * Time.deltaTime);
+        if (transform.position.x < point.position.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 550, 0);
+        }
     }
 }
