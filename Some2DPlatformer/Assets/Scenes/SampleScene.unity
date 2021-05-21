@@ -23162,7 +23162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 0.02
+  speed: 0.015
   jumping: 200
 --- !u!95 &1954924505
 Animator:
