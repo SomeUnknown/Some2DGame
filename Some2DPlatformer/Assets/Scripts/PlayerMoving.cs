@@ -6,50 +6,49 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMoving : MonoBehaviour
 {
-    public GameObject player;
-    public float speed = 0;
-    public float jumping = 0;
-    private Rigidbody2D rb2D;
+    private Animator animator;
+    private Rigidbody2D rb;
+    private SpriteRenderer sprite;
+
+    [SerializeField]
+    public float speed;
+    [SerializeField]
+    public float jumpForce;
+    [SerializeField]
+    public Transform groundCheck;
+
     private bool isGrounded;
 
     public void Start()
     {
-        player = (GameObject)this.gameObject;
-        rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
-    public void Update()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-        {
-            player.transform.position += new Vector3(-speed, 0, 0);
-            player.transform.rotation = Quaternion.Euler(0, 550, 0);
-        }
-
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            player.transform.localPosition += new Vector3(speed, 0, 0);
-            player.transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            if (isGrounded)
-            {
-                rb2D.AddForce(transform.up * jumping, ForceMode2D.Impulse);
-            }
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)//земля для прыжка
-    {
-        if (collision.gameObject.tag == "Ground")
+        if (Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground")))
             isGrounded = true;
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)//земля для прыжка
-    {
-        if (collision.gameObject.tag == "Ground")
+        else
             isGrounded = false;
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += new Vector3(speed, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        else if (Input.GetKey(KeyCode.A))
+        {
+            transform.position += new Vector3(-speed, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 550, 0);
+        }
+
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

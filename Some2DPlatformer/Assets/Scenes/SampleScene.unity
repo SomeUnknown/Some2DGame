@@ -408,9 +408,9 @@ GameObject:
   - component: {fileID: 412478132}
   - component: {fileID: 412478131}
   - component: {fileID: 412478130}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsBricks
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1032,91 +1032,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -7, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 6, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 10, y: -2, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 31
       m_TileSpriteIndex: 31
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -7, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 6, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -7, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 6, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -7, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 3
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 6, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 28
-      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -1800,8 +1720,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 86fdeb14cd5d9d94283db74278bc6240, type: 2}
-  - m_RefCount: 8
-    m_Data: {fileID: 11400000, guid: 218138ebc452cea4598752bb43b38c1e, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 0efa8237f5b42f14dae57ffcaa21a821, type: 2}
   - m_RefCount: 6
@@ -1897,8 +1817,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 8
-    m_Data: {fileID: -1008783107291871121, guid: 2cdc8e38e83dc9041832c236ae62f7c7, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -3269275148868065799, guid: 2cdc8e38e83dc9041832c236ae62f7c7, type: 3}
   - m_RefCount: 1
@@ -1942,7 +1862,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -8374071049770557732, guid: 2cdc8e38e83dc9041832c236ae62f7c7, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 124
+  - m_RefCount: 116
     m_Data:
       e00: 1
       e01: 0
@@ -1967,7 +1887,7 @@ Tilemap:
     m_Data: {r: 9.581732e-17, g: 9.581732e-17, b: 9.581732e-17, a: 9.581732e-17}
   - m_RefCount: 0
     m_Data: {r: 9.581732e-17, g: 9.581732e-17, b: 9.581732e-17, a: 9.581732e-17}
-  - m_RefCount: 124
+  - m_RefCount: 116
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2415,7 +2335,8 @@ GameObject:
   - component: {fileID: 432796397}
   - component: {fileID: 432796396}
   - component: {fileID: 432796401}
-  m_Layer: 0
+  - component: {fileID: 432796402}
+  m_Layer: 6
   m_Name: EnemyWalker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2569,6 +2490,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &432796402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432796395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acdba65116d9d24d933e8af46689f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+--- !u!1 &457313278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457313279}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457313279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457313278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.007, y: -0.278, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1954924503}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,7 +2646,8 @@ GameObject:
   - component: {fileID: 541614733}
   - component: {fileID: 541614732}
   - component: {fileID: 541614731}
-  m_Layer: 0
+  - component: {fileID: 541614737}
+  m_Layer: 6
   m_Name: EnemyRaven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2836,6 +2801,19 @@ Transform:
   m_Father: {fileID: 770319588}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 550, z: 0}
+--- !u!114 &541614737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541614730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acdba65116d9d24d933e8af46689f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &551659622
 GameObject:
   m_ObjectHideFlags: 0
@@ -4095,9 +4073,9 @@ GameObject:
   - component: {fileID: 719914034}
   - component: {fileID: 719914033}
   - component: {fileID: 719914032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsBricks
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5085,9 +5063,9 @@ GameObject:
   - component: {fileID: 795929717}
   - component: {fileID: 795929719}
   - component: {fileID: 795929718}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Throne
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5302,7 +5280,8 @@ GameObject:
   - component: {fileID: 1035753275}
   - component: {fileID: 1035753276}
   - component: {fileID: 1035753277}
-  m_Layer: 0
+  - component: {fileID: 1035753278}
+  m_Layer: 6
   m_Name: EnemyGhost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5456,6 +5435,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1035753278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035753271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acdba65116d9d24d933e8af46689f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
 --- !u!1 &1061714711
 GameObject:
   m_ObjectHideFlags: 0
@@ -5665,9 +5657,9 @@ GameObject:
   - component: {fileID: 1279108136}
   - component: {fileID: 1279108135}
   - component: {fileID: 1279108137}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsBricks
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7632,9 +7624,9 @@ GameObject:
   - component: {fileID: 1373040911}
   - component: {fileID: 1373040910}
   - component: {fileID: 1373040909}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsBricks
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9523,6 +9515,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1658637532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1658637533}
+  m_Layer: 0
+  m_Name: attackPose
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1658637533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658637532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.375, y: 0.067, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1954924503}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699592779
 GameObject:
   m_ObjectHideFlags: 0
@@ -9535,9 +9557,9 @@ GameObject:
   - component: {fileID: 1699592782}
   - component: {fileID: 1699592781}
   - component: {fileID: 1699592783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsBricks
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10561,9 +10583,9 @@ GameObject:
   - component: {fileID: 1740439658}
   - component: {fileID: 1740439657}
   - component: {fileID: 1740439656}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PhysicsBricks
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23028,8 +23050,9 @@ GameObject:
   - component: {fileID: 1954924500}
   - component: {fileID: 1954924504}
   - component: {fileID: 1954924505}
-  - component: {fileID: 1954924506}
   - component: {fileID: 1954924501}
+  - component: {fileID: 1954924506}
+  - component: {fileID: 1954924507}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -23071,7 +23094,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0014076233, y: -0.027904928}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23082,7 +23105,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.47, y: 0.51}
+  m_Size: {x: 0.478401, y: 0.4541083}
   m_EdgeRadius: 0
 --- !u!212 &1954924502
 SpriteRenderer:
@@ -23143,9 +23166,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954924499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.42, y: -1.213, z: 0}
+  m_LocalPosition: {x: -8.437, y: -1.134, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 457313279}
+  - {fileID: 1658637533}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -23161,9 +23186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c14f9742ba7ffb42b29dd090f6fb004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   speed: 0.015
-  jumping: 200
+  jumpForce: 20
+  groundCheck: {fileID: 457313279}
 --- !u!95 &1954924505
 Animator:
   serializedVersion: 3
@@ -23192,9 +23217,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954924499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8da13c3319027943a059e2430a44920, type: 3}
+  m_Script: {fileID: 11500000, guid: e8a4eb41f1dcec64fb137565a3ee2e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1954924507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954924499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbbc78d5fb335742ad954e878979784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBetweenAttack: 0.2
+  attackPose: {fileID: 1658637533}
+  attackRange: 0.7
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 64
+  damage: 2
+  anim: {fileID: 1954924505}
 --- !u!1 &1955893606
 GameObject:
   m_ObjectHideFlags: 0
