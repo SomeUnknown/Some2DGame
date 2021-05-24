@@ -9539,7 +9539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658637532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.375, y: 0.067, z: 0}
+  m_LocalPosition: {x: 0.292, y: 0.036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1954924503}
@@ -23046,13 +23046,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1954924503}
-  - component: {fileID: 1954924502}
-  - component: {fileID: 1954924500}
   - component: {fileID: 1954924504}
-  - component: {fileID: 1954924505}
-  - component: {fileID: 1954924501}
-  - component: {fileID: 1954924506}
   - component: {fileID: 1954924507}
+  - component: {fileID: 1954924506}
+  - component: {fileID: 1954924501}
+  - component: {fileID: 1954924500}
+  - component: {fileID: 1954924502}
+  - component: {fileID: 1954924505}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -23094,7 +23094,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0014076233, y: -0.027904928}
+  m_Offset: {x: 0.0027980953, y: 0.00069344044}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23105,7 +23105,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.478401, y: 0.4541083}
+  m_Size: {x: 0.49690607, y: 0.51466966}
   m_EdgeRadius: 0
 --- !u!212 &1954924502
 SpriteRenderer:
@@ -23166,7 +23166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954924499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.437, y: -1.134, z: 0}
+  m_LocalPosition: {x: -8.437, y: -1.211, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 457313279}
@@ -23186,7 +23186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c14f9742ba7ffb42b29dd090f6fb004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.015
+  speed: 0.03
   jumpForce: 20
   groundCheck: {fileID: 457313279}
 --- !u!95 &1954924505
@@ -23232,14 +23232,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbbbc78d5fb335742ad954e878979784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBetweenAttack: 0.2
+  startTimeBetweenAttack: 0
   attackPose: {fileID: 1658637533}
-  attackRange: 0.7
+  attackRange: 1.5
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
-  damage: 2
+  damage: 4
   anim: {fileID: 1954924505}
+  groundCheck: {fileID: 457313279}
 --- !u!1 &1955893606
 GameObject:
   m_ObjectHideFlags: 0

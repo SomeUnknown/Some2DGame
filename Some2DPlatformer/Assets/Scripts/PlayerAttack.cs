@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float timeBetweenAttack;
     public float startTimeBetweenAttack;
 
     public Transform attackPose;
@@ -12,18 +11,24 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemy;
     public int damage;
     public Animator anim;
+    public Transform groundCheck;
+    private bool isGrounded;
 
     private void Update()
     {
-        if (timeBetweenAttack <= 0)
-        {
-            if (Input.GetKey(KeyCode.K))
-                anim.SetTrigger("attack");
-
-            timeBetweenAttack = startTimeBetweenAttack;
-        }
+        if (Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground")))
+            isGrounded = true;
         else
-            timeBetweenAttack -= Time.deltaTime;
+            isGrounded = false;
+        if (Input.GetKey(KeyCode.K))
+            if (!isGrounded)
+            {
+                anim.SetTrigger("FlyingAttack");
+            }
+            else
+            {
+                anim.SetTrigger("attack");
+            }
     }
 
     public void OnAttack()
