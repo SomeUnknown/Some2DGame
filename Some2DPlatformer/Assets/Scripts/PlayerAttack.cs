@@ -20,10 +20,11 @@ public class PlayerAttack : MonoBehaviour
             isGrounded = true;
         else
             isGrounded = false;
-        if (Input.GetKey(KeyCode.K))
+
+        if (Input.GetKeyUp(KeyCode.K))
             if (!isGrounded)
             {
-                anim.SetTrigger("FlyingAttack");
+                anim.Play("FlyingAttack");
             }
             else
             {
