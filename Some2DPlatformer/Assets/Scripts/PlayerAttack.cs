@@ -24,11 +24,13 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.K))
             if (!isGrounded)
             {
+                attackRange = 3.0f;
                 anim.Play("FlyingAttack");
             }
             else
             {
-                anim.SetTrigger("attack");
+                attackRange = 1.5f;
+                anim.Play("Attack1");
             }
     }
 

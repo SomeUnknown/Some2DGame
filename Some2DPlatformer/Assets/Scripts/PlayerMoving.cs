@@ -33,19 +33,19 @@ public class PlayerMoving : MonoBehaviour
         else
             isGrounded = false;
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && Time.deltaTime != 0)
         {
             transform.position += new Vector3(speed, 0, 0);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && Time.deltaTime != 0)
         {
-            transform.position += new Vector3(-speed, 0, 0);
+            transform.position += new Vector3(-speed , 0, 0);
             transform.rotation = Quaternion.Euler(0, 550, 0);
         }
 
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        if (Input.GetKey(KeyCode.Space) && isGrounded && Time.deltaTime != 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
@@ -54,6 +54,6 @@ public class PlayerMoving : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Restarter")
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
     }
 }
