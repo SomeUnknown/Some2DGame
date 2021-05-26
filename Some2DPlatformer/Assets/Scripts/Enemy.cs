@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
-            Invoke("DestroyEnemy", .6f);
+            Invoke("DestroyEnemy", .8f);
             anim.SetBool("isDead", true);
         }
     }
