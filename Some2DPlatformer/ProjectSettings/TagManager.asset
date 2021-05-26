@@ -10,6 +10,7 @@ TagManager:
   - EnemyGhost
   - EnemyWalker
   - EnemyRaven
+  - Attack
   layers:
   - Default
   - TransparentFX

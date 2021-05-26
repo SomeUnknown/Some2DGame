@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMoving : MonoBehaviour
 {
-    private Animator animator;
     private Rigidbody2D rb;
-    private SpriteRenderer sprite;
 
     [SerializeField]
     public float speed;
@@ -21,9 +19,7 @@ public class PlayerMoving : MonoBehaviour
 
     public void Start()
     {
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Update()

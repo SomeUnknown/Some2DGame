@@ -2634,7 +2634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acdba65116d9d24d933e8af46689f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 10
 --- !u!1 &457313278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,7 +2818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f4a52eb95caa1d41b49e5423d59b7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damping: 3
+  damping: 6
   offset: {x: 1, y: 1}
   faceLeft: 0
 --- !u!20 &519420031
@@ -5693,7 +5693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acdba65116d9d24d933e8af46689f47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 10
 --- !u!1 &1061714711
 GameObject:
   m_ObjectHideFlags: 0
@@ -23509,7 +23509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c14f9742ba7ffb42b29dd090f6fb004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.03
+  speed: 0.015
   jumpForce: 20
   groundCheck: {fileID: 457313279}
 --- !u!95 &1954924505
@@ -23561,7 +23561,7 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
-  damage: 4
+  damage: 1
   anim: {fileID: 1954924505}
   groundCheck: {fileID: 457313279}
 --- !u!1 &1955893606
