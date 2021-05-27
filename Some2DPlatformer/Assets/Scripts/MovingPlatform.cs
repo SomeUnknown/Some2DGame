@@ -5,29 +5,28 @@ using UnityEngine;
 public class MovingPlatform : MonoBehaviour
 {
     public float speed;
-    bool movingRight;
-    bool stop = false;
+    bool movingRight = true;
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x > 280)
+        if (transform.position.x >= 340)
         {
             movingRight = false;
         }
-        else if(transform.position.x <= 231)
+        else if(transform.position.x <= 215)
         {
             movingRight = true;
         }
 
-        if (movingRight && !stop)
+        if (movingRight)
         {
-            transform.position = new Vector2(transform.position.x + speed * Time.deltaTime, transform.position.y);
+            transform.position += new Vector3(speed, 0, 0);
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        else if (!movingRight && !stop)
+        else
         {
-            transform.position = new Vector2(transform.position.x - speed * Time.deltaTime, transform.position.y);
+            transform.position += new Vector3(-speed, 0, 0);
             transform.rotation = Quaternion.Euler(0, 550, 0);
         }
     }
