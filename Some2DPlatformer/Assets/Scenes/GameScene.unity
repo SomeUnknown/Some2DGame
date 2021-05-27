@@ -49651,6 +49651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 7
   numOfHearts: 7
+  regenerationScale: 0.5
   hearts:
   - {fileID: 930769990}
   - {fileID: 685559072}

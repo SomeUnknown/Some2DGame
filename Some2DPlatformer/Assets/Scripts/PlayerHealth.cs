@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public float health;
     public int numOfHearts;
+    public float regenerationScale;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -16,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (health > numOfHearts)
             health = numOfHearts;
+
+        health += Time.deltaTime * regenerationScale;
+
         for (var i = 0; i < hearts.Length; i++)
         {
             if (i < Mathf.RoundToInt(health))
