@@ -47111,6 +47111,8 @@ GameObject:
   - component: {fileID: 1001945499}
   - component: {fileID: 1001945498}
   - component: {fileID: 1001945502}
+  - component: {fileID: 1001945501}
+  - component: {fileID: 1001945503}
   m_Layer: 6
   m_Name: EnemySemiBoss
   m_TagString: Untagged
@@ -47230,6 +47232,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1001945501
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001945496}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2902877, y: -0.00000033994016}
+  serializedVersion: 2
+  m_Radius: 1.0337787
 --- !u!95 &1001945502
 Animator:
   serializedVersion: 3
@@ -47249,6 +47267,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1001945503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001945496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10200ae749682584dac19d470466b3fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAnim: {fileID: 800097972}
+  dialogueManager: {fileID: 764046384}
 --- !u!1 &1005082301
 GameObject:
   m_ObjectHideFlags: 0
@@ -75968,10 +76000,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -75980,7 +76012,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u0414\u043B\u044F \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435
-    A \u0438 D"
+    A \u0438 D \u041F\u0440\u044B\u0436\u043E\u043A \u043D\u0430 SPACE, \u0410\u0442\u0430\u043A\u0430
+    \u043D\u0430 K"
 --- !u!1 &1840023307
 GameObject:
   m_ObjectHideFlags: 0
@@ -76371,6 +76404,7 @@ GameObject:
   - component: {fileID: 1954924500}
   - component: {fileID: 1954924502}
   - component: {fileID: 1954924505}
+  - component: {fileID: 1954924509}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -76584,6 +76618,22 @@ MonoBehaviour:
   - {fileID: 53839034}
   fullHeart: {fileID: -3671679787946145601, guid: 571b07858af9323438334f2aca364aab, type: 3}
   emptyHeart: {fileID: -2830316676528641983, guid: 571b07858af9323438334f2aca364aab, type: 3}
+--- !u!58 &1954924509
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954924499}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1716299, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.70694447
 --- !u!1 &1955893606
 GameObject:
   m_ObjectHideFlags: 0
