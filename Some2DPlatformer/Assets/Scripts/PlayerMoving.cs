@@ -2,11 +2,18 @@ using UnityEngine;
 using System.Collections;
 using System.Threading;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMoving : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public float health;
+    public int numOfHearts;
+    public Image[] hearts;
+    public Sprite fullHeart;
+    public Sprite emptyHeart;
+
 
     [SerializeField]
     public float speed;
@@ -20,6 +27,21 @@ public class PlayerMoving : MonoBehaviour
     public void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+    private void FixedUpdate()
+    {
+        if (health > numOfHearts)
+            health = numOfHearts;
+        for (var i = 0; i < hearts.Length; i++)
+        {
+            if (i < Mathf.RoundToInt(health))
+                hearts[i].sprite = fullHeart;
+            else
+                hearts[i].sprite = emptyHeart;
+        }
+
+        if (health < 1)
+            SceneManager.LoadScene(1);
     }
 
     private void Update()

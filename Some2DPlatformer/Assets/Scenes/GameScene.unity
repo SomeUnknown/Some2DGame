@@ -32186,7 +32186,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c14f9742ba7ffb42b29dd090f6fb004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.03
+  health: 5
+  numOfHearts: 5
+  hearts:
+  - {fileID: 930769990}
+  - {fileID: 685559072}
+  - {fileID: 1715132481}
+  - {fileID: 1062097197}
+  - {fileID: 1701369508}
+  fullHeart: {fileID: -3671679787946145601, guid: 571b07858af9323438334f2aca364aab, type: 3}
+  emptyHeart: {fileID: -2830316676528641983, guid: 571b07858af9323438334f2aca364aab, type: 3}
+  speed: 0.015
   jumpForce: 20
   groundCheck: {fileID: 457313279}
 --- !u!95 &1954924505
