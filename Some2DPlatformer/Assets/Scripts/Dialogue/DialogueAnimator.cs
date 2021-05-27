@@ -6,15 +6,27 @@ public class DialogueAnimator : MonoBehaviour
 {
     public Animator startAnim;
     public DialogueManager dialogueManager;
+    public GameObject player;
 
-    public void OnTriggerEnter2D(Collider2D other)
+
+    private bool wasNotOpened = true;
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        startAnim.SetBool("startOpen", true);
+        if (collision.name.Equals("Player") && wasNotOpened)
+        {
+            startAnim.SetBool("startOpen", true);
+            wasNotOpened = false;
+        }
+    }
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name.Equals("Player"))
+        {
+            startAnim.SetBool("startOpen", false);
+            dialogueManager.EndDialog();
+        }
     }
 
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        startAnim.SetBool("startOpen", false);
-        dialogueManager.EndDialog();
-    }
+    
 }

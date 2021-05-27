@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+    private bool wasNotOpened = true;
+
     private void Start()
     {
         sentences = new Queue<string>();
@@ -21,8 +23,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        boxAnim.SetBool("boxOpen", true);
-        startAnim.SetBool("startOpen", false);
+        if (wasNotOpened)
+        {
+            boxAnim.SetBool("boxOpen", true);
+            startAnim.SetBool("startOpen", false);
+            wasNotOpened = false;
+        }
 
         nameText.text = dialogue.name;
         sentences.Clear();
