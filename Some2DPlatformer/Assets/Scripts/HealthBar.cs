@@ -10,11 +10,6 @@ public class HealthBar : MonoBehaviour
     public Image[] lives;
     public Sprite fullLives;
     public Sprite emptyLives;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
