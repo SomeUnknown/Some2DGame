@@ -1713,9 +1713,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f576ab6cfa25b964f9e7f2647b41de24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   distanceOfPatrol: 2
-  point: {fileID: 1061714712}
+  point: {fileID: 1453053633}
   stoppingDistance: 3
 --- !u!50 &626781096
 Rigidbody2D:
@@ -46304,9 +46304,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f576ab6cfa25b964f9e7f2647b41de24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   distanceOfPatrol: 2
-  point: {fileID: 1061714712}
+  point: {fileID: 1416820983}
   stoppingDistance: 3
 --- !u!50 &865657301
 Rigidbody2D:
@@ -46820,7 +46820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007268187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 129.7, y: -1.76, z: 20.418646}
+  m_LocalPosition: {x: 131.9, y: -1.17, z: 20.418646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2064163510}
@@ -47005,7 +47005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f576ab6cfa25b964f9e7f2647b41de24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   distanceOfPatrol: 2
   point: {fileID: 1061714712}
   stoppingDistance: 4
@@ -50289,7 +50289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   distanceOfPatrol: 5
-  point: {fileID: 1005082302}
+  point: {fileID: 39700130}
   stoppingDistance: 6
 --- !u!61 &1119846126
 BoxCollider2D:
@@ -66692,9 +66692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f576ab6cfa25b964f9e7f2647b41de24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   distanceOfPatrol: 2
-  point: {fileID: 1061714712}
+  point: {fileID: 848357368}
   stoppingDistance: 3
 --- !u!50 &1200731345
 Rigidbody2D:
@@ -67208,9 +67208,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f576ab6cfa25b964f9e7f2647b41de24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   distanceOfPatrol: 2
-  point: {fileID: 1061714712}
+  point: {fileID: 1731096521}
   stoppingDistance: 3
 --- !u!50 &1275124519
 Rigidbody2D:
@@ -74901,9 +74901,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  distanceOfPatrol: 4
-  point: {fileID: 1489603326}
-  stoppingDistance: 7
+  distanceOfPatrol: 2
+  point: {fileID: 36211102}
+  stoppingDistance: 3
 --- !u!95 &1733240899
 Animator:
   serializedVersion: 3
@@ -75283,9 +75283,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  distanceOfPatrol: 4
-  point: {fileID: 1489603326}
-  stoppingDistance: 7
+  distanceOfPatrol: 2
+  point: {fileID: 540538355}
+  stoppingDistance: 3
 --- !u!95 &1773781522
 Animator:
   serializedVersion: 3
@@ -76388,7 +76388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   distanceOfPatrol: 5
-  point: {fileID: 1489603326}
+  point: {fileID: 1007268188}
   stoppingDistance: 7
 --- !u!95 &2051876583
 Animator:
