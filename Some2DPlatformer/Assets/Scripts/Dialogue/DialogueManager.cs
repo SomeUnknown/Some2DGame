@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
-    public Text dialogText;
+    public Text dialogueText;
     public Text nameText;
 
     public Animator boxAnim;
+    public Animator startAnim;
 
     private Queue<string> sentences;
 
@@ -18,14 +19,15 @@ public class DialogManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialog (Dialog dialog)
+    public void StartDialogue(Dialogue dialogue)
     {
         boxAnim.SetBool("boxOpen", true);
+        startAnim.SetBool("startOpen", false);
 
-        nameText.text = dialog.name;
+        nameText.text = dialogue.name;
         sentences.Clear();
 
-        foreach(string sentence in dialog.sentences)
+        foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -41,15 +43,15 @@ public class DialogManager : MonoBehaviour
         }
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
-        StopCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(sentence));
     }
 
     IEnumerator TypeSentence(string sentence)
     {
-        dialogText.text = "";
+        dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            dialogText.text += letter;
+            dialogueText.text += letter;
             yield return null;
         }
     }
