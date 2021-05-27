@@ -10,7 +10,7 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x >= 340)
+        if (transform.position.x >= 312)
         {
             movingRight = false;
         }
