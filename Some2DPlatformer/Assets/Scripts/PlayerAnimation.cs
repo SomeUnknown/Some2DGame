@@ -20,4 +20,9 @@ public class PlayerAnimation : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
             anim.SetTrigger("Jump");
     }
+
+    public void PlayerHitTakingAnim()
+    {
+        anim.Play("TakeHit");
+    }
 }
