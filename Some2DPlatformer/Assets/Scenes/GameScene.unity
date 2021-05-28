@@ -71457,7 +71457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBetweenAttack: 6
   damage: 2
-  health: 10
+  health: 100
 --- !u!95 &1462308514
 Animator:
   serializedVersion: 3
